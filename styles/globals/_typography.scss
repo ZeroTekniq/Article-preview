@@ -1,9 +1,10 @@
 @use 'colors' as c;
+@use 'fonts' as f;
 
 body {
     $fs-primary: 13px;
     font-size: $fs-primary;
-    font-family: 'Manrope', sans-serif;
+    font-family: f.$f-manrope;
     font-weight: 500;
     color: c.$desaturated-dark-blue-500;
     letter-spacing: 0.001rem;
