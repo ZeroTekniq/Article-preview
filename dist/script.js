@@ -9,10 +9,12 @@ modalContainer.addEventListener('click', close);
 
 
 function openModal() {
+    modalContainer.style.display = 'block';
     shareModal.style.display = 'block';
     shareButton.style.zIndex = '0';
 }
 function close() {
+    modalContainer.style.display = 'none';
     shareButton.style.zIndex = '1';
     shareModal.style.display = 'none';
 }

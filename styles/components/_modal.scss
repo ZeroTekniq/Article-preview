@@ -1,7 +1,8 @@
 @use '../globals/colors' as c;
 
-.modal-page {
 
+
+.modal-page {
     display: grid;
     place-items: center;
     width: 100%;
@@ -10,10 +11,13 @@
 }
 
 .modal-container {
+    display: none;
     width: 20.4375rem;
     height: 33.625rem;
     border-radius: 0.625rem;   
     position: absolute;
+    // border: 2px solid red;
+    
 }
 
 .modal {
@@ -33,7 +37,7 @@
         align-items: center;
         border-bottom-left-radius: 0.625rem;
         border-bottom-right-radius: 0.625rem;
-        bottom: 0;
+        bottom: 0rem;
         position: absolute;
     }
 }

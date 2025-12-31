@@ -1,0 +1,64 @@
+@forward 'card-layout';
+@use '../globals/colors' as c;
+
+@media screen and (min-width: 48rem) {
+    .wrapper {
+        width: 38rem;
+        height: 21.625rem;
+        flex-direction: row;
+    }
+
+    .img-container {
+        width: 14rem;
+        background-position: 0rem;
+        background-size: 16.5625rem 100%;
+        padding: 0;
+        border-radius: 0.625rem 0 0 0.625rem;
+    }
+
+    .description-box {
+        width: 22.4375rem;
+        padding: 0;
+        margin-top: -1rem;
+        margin-bottom: -0.5rem;
+        margin-inline: 1.78125rem;
+        margin-left: 0;
+        // z-index: 1;
+        
+    }
+
+    .heading {
+        width: 19.5375rem;
+        white-space: pre-line;
+        margin-top: -1rem;
+    }
+
+    .text-box {
+        width: 19.4375rem;
+    }
+
+    .social-container {
+        width: 19.9375rem;
+        margin-top: 1.5rem;
+    }
+
+    .modal-container {
+        height: 4.75rem;
+        margin-left: 32.35rem;
+        margin-top: 5rem;
+    }
+    .modal__content {
+        bottom: 1rem;
+        border-radius: 0.625rem;
+    }
+
+    .modal-container::after {
+        content: '';
+        position: absolute;
+        border: 1rem solid transparent;
+        border-top-color: c.$dark-grayish-blue-900;
+        border-bottom: 0;
+        margin-left: 9rem;
+        bottom: 0;
+    }
+}
