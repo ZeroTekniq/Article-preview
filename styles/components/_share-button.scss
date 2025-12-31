@@ -1,0 +1,18 @@
+@use '../globals/colors' as c;
+
+.share-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: c.$light-grayish-blue-200;
+    z-index: 1;
+}
+
+.share-button:hover {
+    cursor: pointer;
+    background-color: c.$desaturated-dark-blue-500;
+}

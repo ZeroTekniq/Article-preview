@@ -1,0 +1,59 @@
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20.4375rem;
+    height: 33.625rem;
+    border-radius: 0.625rem;   
+}
+
+.img-container {
+    width: 20.4375rem;
+    height: 100%;
+    border-radius: 0.625rem 0.625rem 0 0;
+    background-image: url(/images/drawers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -1rem;
+}
+
+.description-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.875rem 1rem 1.875rem;
+}
+
+.heading {
+    width: 16.6875rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+.social-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    width: 10.75rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+

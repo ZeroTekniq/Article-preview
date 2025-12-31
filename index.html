@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./dist/styles.css">
   <title>Frontend Mentor | Article preview component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,23 +14,65 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="body">
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <main class="wrapper">
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <!-- Main Image -->
+    <div class="img-container"></div>
 
-  Michelle Appleton
-  28 Jun 2020
+    <!-- Content  -->
+    <div class="description-box">
+      <h1 class="heading">
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home
+      </h1>
+      <p>
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.
+      </p>
 
-  Share
+      <!-- Social profile -->
+      <div class="social-container">
+        <div class="profile-info">
+          <img class="profile-pic" src="/images/avatar-michelle.jpg" alt="a picture of Michelle Appleton" width="40px" height="40px">
+          <div class="social-info">
+            <h2>Michelle Appleton</h2>
+            <date class="date">28 Jun 2020</date>
+          </div>
+        </div>
+        <button id = "share-button" class="share-button">
+          <img src="/images/icon-share.svg" alt="a share icon">
+        </button> 
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal pop up  -->
+  <div class="modal-container">
+    <div id ="open-modal" class ="modal">
+      <div class="modal__content">
+        <div class="social-sharing-flexbox">
+          <h2 class="share-heading">Share</h2>
+          <a href="#""><img src="/images/icon-facebook.svg" alt="facebook icon"></a>
+          <a href="#"><img src="/images/icon-twitter.svg" alt="twitter icon"></a>
+          <a href="#"><img src="/images/icon-pinterest.svg" alt="pinterest icon"></a>
+        </div>
+        <button id = "close-modal" class="modal-share-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13" fill="none">
+          <path d="M15 6.48112L8.76629 0V3.86675H7.44095C3.33138 3.86675 0 7.02539 0 10.9219V12.971L0.588684 12.3594C2.59014 10.2802 5.4221 9.09549 8.39115 9.09549H8.76629V12.9622L15 6.48112Z" fill="white"/>
+          </svg>
+        </button> 
+      </div>
+   </div>
+  </div>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  <script src="./dist/script.js"></script>
 </body>
 </html>
