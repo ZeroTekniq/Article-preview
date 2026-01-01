@@ -16,3 +16,8 @@
     cursor: pointer;
     background-color: c.$desaturated-dark-blue-500;
 }
+
+.share-button.no-hover:hover {
+    cursor: pointer;
+    background-color: c.$light-grayish-blue-200;
+}
