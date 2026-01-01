@@ -9,6 +9,7 @@ closeModal.addEventListener('click', close);
 modalContainer.addEventListener('click', close);
 
 ifTouchDevice();
+keyboardModalEscape();
 
 
 function openModal() {
@@ -27,7 +28,6 @@ function close() {
     shareModal.style.display = 'none';
     modalContainer.style.display = 'none';
     shareButton.style.zIndex = '1';
-    
 }
 
 function toggleButton() {
@@ -51,4 +51,12 @@ function ifTouchDevice() {
     } else {
         shareButton.classList.remove('no-hover');
     }
+}
+
+function keyboardModalEscape() {
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            close();
+        }
+    })
 }
