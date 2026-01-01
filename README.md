@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://zerotekniq.github.io/Article-preview/)
+- Live Site URL: [ZeroTekniq Article Preview](https://zerotekniq.github.io/Article-preview/)
 
 ## My process
 
@@ -57,6 +57,6 @@ Hope to continue growing with more complex projects.
 
 ## Author
 
-- Website - [Add your name here](https://github.com/ZeroTekniq/Article-preview)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/zerotekniq)
+- Website - [ZeroTekniq](https://github.com/ZeroTekniq/Article-preview)
+- Frontend Mentor - [@zerotekniq](https://www.frontendmentor.io/profile/zerotekniq)
 
